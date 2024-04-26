@@ -1,0 +1,561 @@
+.containerplace {
+    position: absolute;
+    top:7%;
+    left:27%;
+    max-width: 600px;
+    width: 100%;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.767);
+  }
+  
+  .containerplace header {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .containerplace .form {
+    margin-top: 15px;
+  }
+  
+  .form .input-box {
+    width: 105%;
+    margin-top: 10px;
+  }
+  
+  .input-box label {
+    color: #000;
+  }
+  .input-box select {
+    width: calc(100% - 0px); 
+    padding: 8px; 
+    border: 2px solid #2c1dd3; 
+    border-radius: 9px; 
+    box-sizing: border-box; 
+  }
+  
+  
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 92%;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
+    border: 2px solid #1d1ada;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: white;
+  }
+  
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  .form .gender-box {
+    margin-top: 10px;
+  }
+  
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .form .gender {
+    column-gap: 5px;
+  }
+  
+  .gender input {
+    accent-color: #EE4E34;
+  }
+  
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  
+  .gender label {
+    color: #000;
+  }
+  
+  .address :where(input, .select-box) {
+    margin-top: 10px;
+  }
+  
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1rem;
+    background: #FCEDDA;
+  }
+  
+  .form button {
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #0630ad;
+  }
+  
+  .form button:hover {
+    background: #EE3E34;
+  }
+/*upload */
+.uploadcontainer {
+  max-width: 300px;
+  margin: 2 auto;
+  padding:3;
+  border-radius: 2px;
+}
+  .inpdddut[type="file"] {
+    padding: 9.5px;
+    border: none;
+    border-radius: 3px;
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .ordercard {
+    top:30%;
+    left:40%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 0.5rem;
+    max-width: 250px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+  }
+  
+  .div_image_v {
+    background: #47c9a2;
+    border-bottom: none;
+    position: relative;
+    text-align: center;
+    margin: -20px -20px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 35px;
+  }
+  
+  .dismiss {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: black;
+    border: 2px solid #D1D5DB;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    transition: .3s ease;
+  }
+  
+  .dismiss:hover {
+    background-color: #ee0d0d;
+    border: 2px solid #ee0d0d;
+    color: #fff;
+  }
+  
+  .orderheader {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
+  
+  .image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e2feee;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    animation: animate .6s linear alternate-reverse infinite;
+    transition: .6s ease;
+  }
+  
+  .image svg {
+    color: #0afa2a;
+    width: 2rem;
+    height: 2rem;
+  }
+/*   
+  .ordercontent {
+    margin-top: 0.75rem;
+    text-align: center;
+  } */
+  
+  .ordertitle {
+    color: #066e29;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  
+  .ordermessage {
+    margin-top: 0.5rem;
+    color: #595b5f;
+    font-size: 0.975rem;
+    line-height: 1.45rem;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.09);
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .card11 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/cairo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card11-content11 {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+  }
+  
+  .card11:hover {
+    border: #006fff 0.2em solid;
+   }
+   
+
+   .card12 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/pyramid.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card12-content12 {
+    position: absolute;
+    top: 75px;
+    left: 360px;
+  }
+  
+  .card12:hover {
+    border: #006fff 0.2em solid;
+   }
+   
+   .card13 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/templephile.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+  
+   .card13-content13 {
+    position: absolute;
+    top: 75px;
+    left: 670px;
+  }
+  
+  .card13:hover {
+    border: #006fff 0.2em solid;
+   }
+   .card14 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/hurghada.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card14-content14 {
+    position: absolute;
+    top: 75px;
+    left: 980px;
+  }
+  
+  .card14:hover {
+    border: #006fff 0.2em solid;
+   }
+
+/*Netherland cards*/
+
+.card15 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/amster.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card15-content15 {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+  }
+  
+  .card15:hover {
+    border: #006fff 0.2em solid;
+   }
+   
+
+   .card16 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/hague.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card16-content16 {
+    position: absolute;
+    top: 75px;
+    left: 360px;
+  }
+  
+  .card16:hover {
+    border: #006fff 0.2em solid;
+   }
+   
+   .card17 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/rotterdam.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+  
+   .card17-content17 {
+    position: absolute;
+    top: 75px;
+    left: 670px;
+  }
+  
+  .card17:hover {
+    border: #006fff 0.2em solid;
+   }
+   .card18 {
+    width: 280px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    background-image: url('./images/delft.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #000000;
+  }
+   .card18-content18 {
+    position: absolute;
+    top: 75px;
+    left: 980px;
+  }
+  
+  .card18:hover {
+    border: #006fff 0.2em solid;
+   }
+
+/*Indian card*/
+.card19 {
+  width: 280px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('./images/indiagate\.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+ .card19-content19 {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+}
+
+.card19:hover {
+  border: #006fff 0.2em solid;
+ }
+ 
+
+ .card20 {
+  width: 280px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('./images/mysore.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+ .card20-content20 {
+  position: absolute;
+  top: 75px;
+  left: 360px;
+}
+
+.card20:hover {
+  border: #006fff 0.2em solid;
+ }
+ 
+ .card21 {
+  width: 280px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('./images/manali.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+
+ .card21-content21 {
+  position: absolute;
+  top: 75px;
+  left: 670px;
+}
+
+.card21:hover {
+  border: #006fff 0.2em solid;
+ }
+ .card22 {
+  width: 280px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('./images/udaipur.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+ .card22-content22 {
+  position: absolute;
+  top: 75px;
+  left: 980px;
+}
+
+.card22:hover {
+  border: #006fff 0.2em solid;
+ }
+
+
+
+
+ .Para {
+  list-style: none; /* Remove bullet points */
+  padding: 40px; /* Remove default padding */
+  margin: 2px;
+  text-decoration: none; /* Remove underline */
+  font-family: 'Times New Roman', Times, serif; /* Change font family */
+  font-size: 16px; /* Change font size */
+  color: #333333; /* Change text color */
+  line-height: 1.5;
+}
+
+

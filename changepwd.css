@@ -1,0 +1,38 @@
+/* Container */
+.cpcontent {
+    width: 450px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center align text */
+}
+
+/* Button */
+.button4 {
+    height: 35px;
+    width: 400px; 
+    background: linear-gradient(to bottom, #4CAF50, #45a049);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s; 
+    outline: none;
+}
+
+.button4:hover {
+    background: linear-gradient(to bottom, #45a049, #4CAF50);
+    transform: translateY(-2px) scale(1.02); 
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3); 
+}
